@@ -1,5 +1,9 @@
+//inital aray of games
+
 var games = ["The Legend of Zelda", "Bioshock", "Kingdom Hearts", "The Witcher"];
-    
+
+//Need to change API here to game info API
+
 function displayGameInfo() {
     var game = $(this).attr("data-name");
     var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=5KZDAjtUy2sVI1b6KIs3blyHtx4vUAK9&q=" + game + "&limit=10&offset=0&rating=R&lang=en";
