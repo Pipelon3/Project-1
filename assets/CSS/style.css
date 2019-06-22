@@ -52,7 +52,7 @@ body {
   #masthead {
     position: fixed;
     z-index: 99;
-    width: 100%;
+    width: 100%;r
     margin: 0 0 30px;
     overflow: auto;
     color: #ffffff;
@@ -60,18 +60,8 @@ body {
     border-bottom: 2px solid #cccccc;
   }
   
-  #logo {
-    float: left;
-    width: 250px;
-    height: 90px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    background: rgb(143, 24, 50);
+  .jumbotron {
+  background-color: rgb(163, 143, 143) !important;
   }
   
   nav {
