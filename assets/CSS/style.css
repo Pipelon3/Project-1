@@ -42,6 +42,7 @@ body {
     font-size: 30px;
     line-height: 49px;
     border-bottom: 3px solid #dddddd;
+    color: white;
   }
   
   h2,
@@ -62,6 +63,7 @@ body {
   
   .jumbotron {
   background-color: rgb(163, 143, 143) !important;
+  color: white !important;
   }
   
   nav {
