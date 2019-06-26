@@ -1,47 +1,47 @@
-//inital aray of games
+//inital aray of info
 
-var games = ["The Legend of Zelda", "Bioshock", "Kingdom Hearts", "The Witcher"];
+var searchs = [];
 
-//Need to change API here to game info API
+//Need to change API here to search info API
 
-function displayGameInfo() {
-    var game = $(this).attr("data-name");
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=5KZDAjtUy2sVI1b6KIs3blyHtx4vUAK9&q=" + game + "&limit=10&offset=0&rating=R&lang=en";
+function displaysearchInfo() {
+    var search = $(this).attr("data-name");
+    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=5KZDAjtUy2sVI1b6KIs3blyHtx4vUAK9&q=" + search + "&limit=10&offset=0&rating=R&lang=en";
 
     $.ajax({
       url: queryURL,
       contentType: "text/html",
       method: "GET"
       }).then(function(response) {
-        $("#game-view").empty();
+        $("#search-view").empty();
         for ( var i = 0; i < response.data.length; i ++){
           var a = $("<iframe>");
-          a.addClass("game");
+          a.addClass("search");
           a.attr('src', response.data[i].embed_url);
           a.attr('type', response.data[i].type);
-          $("#game-view").append(a);
+          $("#search-view").append(a);
         }         
       });            
     }
 
 function renderButtons() {
     $("#buttons-view").empty();
-    for (var i = 0; i < games.length; i++) {
+    for (var i = 0; i < searchs.length; i++) {
         var a = $("<button>");
-        a.addClass("game-btn");
-        a.attr("data-name", games[i]);
-        a.text(games[i]);
+        a.addClass("search-btn");
+        a.attr("data-name", searchs[i]);
+        a.text(searchs[i]);
         $("#buttons-view").append(a);
     }
 }
 
-$("#add-game").on("click", function(event) {
+$("#add-search").on("click", function(event) {
     event.preventDefault();
-    var game = $("#game-input").val().trim();
-    games.push(game);
+    var search = $("#search-input").val().trim();
+    searchs.push(search);
     renderButtons();
 });
 
-$(document).on("click", ".game-btn", displayGameInfo);
+$(document).on("click", ".search-btn", displaysearchInfo);
 
 renderButtons();
