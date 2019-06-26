@@ -8,26 +8,50 @@
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <title>TV Shows input</title>
+    <title>TV Show input</title>
 </head>
 <body>
     <header id="masthead">
             <div class="container">
                     <div class="jumbotron">
-                        <h1>Search below for a TV show</h1>
+                        <h1>Search below for a Game to search</h1>
                     </div>
-                    <nav>
-                            <a href="index.html">Home</a>
-                            <a href="games.html">Games</a>
-                            <a href="movies.html">Movies</a>
-                            <a href="shows.html">TV Shows</a>
-                        </nav>
             <a href="index.html" id="logo"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="movies.html">Movies</a>
+                <a href="shows.html">TV Shows</a>
+            </nav>
             <div class="col-md-12"></div>
             <form id="form">
-                <label for="user-input">Type a Tv show to search</label><br>
+                <label for="user-input">Type a TV Show to search</label><br>
                 <input type="text" id="user-input">
                 <input id="submitPress" type="submit" value="Submit" class="btn btn-default">
             </form>
         </div>
     </header>
+
+<!-- stuff to make buttons show up -->
+
+    <div class="container">
+        <h1>TV Show Info Search</h1>
+        
+        <div id="buttons-view"></div>
+        
+        <form id="game-form">
+            <label for="game-input">Add TV Show</label>
+            <input type="text" id="game-input">
+            <br>
+            <input id="add-game" type="submit" value="Add">
+        </form>
+            
+        <div id="game-view"></div>
+
+        <div id="gifs-appear-here"></div>
+            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/JS/app.js"></script>
+
+</body>
+</html>
