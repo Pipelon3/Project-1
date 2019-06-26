@@ -3,7 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: darkgray;
+    background-image: url("/Project-1/images/background.jpg");
   }
   
   * {
@@ -64,6 +64,8 @@ body {
   .jumbotron {
   background-color: rgb(163, 143, 143) !important;
   color: white !important;
+  height: 100%;
+  width: 100%;
   }
   
   nav {
