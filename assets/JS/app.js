@@ -1,6 +1,6 @@
 //inital aray of info
 "use strict"
-let database = firebase.database();
+let myDatabase = firebase.database();
 var queryURL = 
 
 //Need to change API here to search info API
@@ -25,7 +25,3 @@ var queryURL =
       console.log(response);    
       });         
 
-function renderButtons() {
-    
-    }
-}
