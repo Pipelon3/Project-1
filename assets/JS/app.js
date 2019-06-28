@@ -1,9 +1,8 @@
-
-var queryURL; 
+let queryURL; 
 
 //Need to change API here to search info API
 
-var firebaseConfig = {
+let firebaseConfig = {
   apiKey: "AIzaSyDdNeSGejyUNnUfuVViu5gTiGJ5Ur3Coco",
   authDomain: "our-group-project.firebaseapp.com",
   databaseURL: "https://our-group-project.firebaseio.com",
