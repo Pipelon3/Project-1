@@ -1,6 +1,4 @@
-//inital aray of info
-"use strict"
-let database = firebase.database();
+
 var queryURL; 
 
 //Need to change API here to search info API
@@ -16,14 +14,14 @@ var firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
-};
+let database = firebase.database();
+
 
 $.ajax({
   url: queryURL,
   contentType: "text/html",
   method: "GET"
-  }).then(function (response) {  
+}).then(function (response) {  
     console.log(response);    
 });       
-
 
