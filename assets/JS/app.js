@@ -24,17 +24,6 @@ function displaysearchInfo() {
       });            
     }
 
-function renderButtons() {
-    $("#buttons-view").empty();
-    for (var i = 0; i < searchs.length; i++) {
-        var a = $("<button>");
-        a.addClass("search-btn");
-        a.attr("data-name", searchs[i]);
-        a.text(searchs[i]);
-        $("#buttons-view").append(a);
-    }
-}
-
 $("#add-search").on("click", function(event) {
     event.preventDefault();
     var search = $("#search-input").val().trim();
