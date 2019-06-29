@@ -1,14 +1,34 @@
-
-
-//Need to change API here to search info API
-
-    var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=5KZDAjtUy2sVI1b6KIs3blyHtx4vUAK9&q=" + search + "&limit=10&offset=0&rating=R&lang=en";
-
-    $.ajax({
-      url: queryURL,
-      contentType: "text/html",
-      method: "GET"
-      }).then(function(response) {
-        console.log(response);
-        }         
-      )
+let myqueryURL = "http://www.omdbapi.com/?apikey=trilogy"
+let firebaseConfig = {
+  apiKey: "AIzaSyDdNeSGejyUNnUfuVViu5gTiGJ5Ur3Coco",
+  authDomain: "our-group-project.firebaseapp.com",
+  databaseURL: "https://our-group-project.firebaseio.com",
+  projectId: "our-group-project",
+  storageBucket: "our-group-project.appspot.com",
+  messagingSenderId: "188419258236",
+  appId: "1:188419258236:web:16bd2d51ed10d949"
+};
+firebase.initializeApp(firebaseConfig);
+let database = firebase.database();
+$("#submitPress").on("click", function() {
+  let movie = $("#user-input").val().trim();
+  let queryURL = myqueryURL + "&type=movie&s="  + movie 
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function (response) {
+    let results = response.Search[0];
+    console.log(results)
+    $("#info-appear-here").append(results.Title)
+    let movieDiv = $("<img>") 
+    let p = $("<p>").text()
+  })
+  event.preventDefault();
+  let movieName = $("#movie-name").val().trim();
+  let newMovie = {
+    name: movieName,
+  }
+  database.ref().push(newMovie)
+  console.log(newMovie.name)
+  
+});
