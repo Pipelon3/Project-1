@@ -107,15 +107,18 @@ background-color: rgb(44, 14, 212) !important;
 color: white !important;
 height: 100%;
 width: 100%;
+margin: 15px;
 }
 #form {
 float: center;
+margin: 15px;
 }
 
 nav {
   float: right;
   margin-top: 25px;
   text-align: right;
+  margin: 10px;
 }
 
 nav a:first-child {
