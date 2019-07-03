@@ -26,6 +26,14 @@ p
 {
   color: rgb(255, 255, 255);
 }
+#submitPress {
+  color: white;
+}
+
+#navbar-brand{
+  background-color: rgb(77, 61, 61)
+
+}
 h1,
 h2,
 h3 {
@@ -128,7 +136,6 @@ nav {
   margin: 10px;
   color: #eeeeee;
 }
-
 .nav-link {
   color: #eeeeee;
 }
