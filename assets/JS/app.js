@@ -1,4 +1,4 @@
-let myqueryURL = "http://www.omdbapi.com/?apikey=trilogy"
+let myqueryURL = "https://api.themoviedb.org/4/search/movie?api_key=a22239c0a3a0a19a69effb094f260e6a"
 let firebaseConfig = {
   apiKey: "AIzaSyDdNeSGejyUNnUfuVViu5gTiGJ5Ur3Coco",
   authDomain: "our-group-project.firebaseapp.com",
