@@ -124,6 +124,15 @@ color: white !important;
 height: 100%;
 width: 100%;
 }
+img{
+  float: left;
+  height: 15%;
+  width: 55%;
+  padding: .5in;
+}
+#info-appear-here {
+  width: 75%;
+}
 #form {
 float: center;
 margin: 1in;
