@@ -4,7 +4,9 @@ $("#submitPress").on("click", function() {
     let movie = $("#user-input").val().trim();
     displayMovieInfo(movie)
     event.preventDefault();
-    movies.push(movie);
+    if (movies.indexOf(movie) === -1){
+        movies.push(movie);
+    }
     renderButtons();
 });
 
@@ -54,4 +56,3 @@ function displayMovieInfo(movie) {
 }
 
 renderButtons();
-
