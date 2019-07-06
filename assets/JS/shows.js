@@ -40,17 +40,17 @@ $(document).on("click", ".show-btn", showshowInfo)
 
 //Stuff to make the buttons show up
 
-var shows = [];
+let shows = [];
 
 function showshowInfo() {
-    var show = $(this).attr("data-name");
+    let show = $(this).attr("data-name");
     displayshowInfo(show);           
 }
 
 function renderButtons() {
     $("#buttons-view").empty();
-    for (var i = 0; i < shows.length; i++) {
-        var a = $("<button>");
+    for (let i = 0; i < shows.length; i++) {
+        let a = $("<button>");
         a.addClass("show-btn");
         a.attr("data-name", shows[i]);
         a.text(shows[i]);

@@ -14,17 +14,17 @@ $(document).on("click", ".movie-btn", showMovieInfo)
 
 //Stuff to make the buttons show up
 
-var movies = [];
+let movies = [];
 
 function showMovieInfo() {
-    var movie = $(this).attr("data-name");
+    let movie = $(this).attr("data-name");
     displayMovieInfo(movie);           
 }
 
 function renderButtons() {
     $("#buttons-view").empty();
-    for (var i = 0; i < movies.length; i++) {
-        var a = $("<button>");
+    for (let i = 0; i < movies.length; i++) {
+        let a = $("<button>");
         a.addClass("movie-btn");
         a.attr("data-name", movies[i]);
         a.text(movies[i]);
