@@ -56,3 +56,16 @@ function displayMovieInfo(movie) {
 }
 
 renderButtons();
+
+//Spotify stuff
+
+function getSoundtrack(movie) {
+    let queryURL = myqueryURL + "&query="  + movie 
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+        }).then(function (response) {
+        
+        })
+
+}
