@@ -72,18 +72,6 @@ label {
   color: white;
 }
 
-#masthead {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  height: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
-  color: rgb(0, 0, 0);
-  background: #ffffff;
-  border-bottom: 2px solid #cccccc;
-}
-
 #about {
   margin: 15px 13% 35px 13%;
   background: rgb(77, 61, 61);
@@ -127,7 +115,7 @@ width: 100%;
 img{
   float: left;
   height: 15%;
-  width: 34%;
+  width: 35%;
   padding: .5in;
 }
 #info-appear-here {
@@ -136,7 +124,7 @@ img{
 }
 #form {
 float: center;
-margin: 1in;
+padding: 1.2in;
 
 }
 
