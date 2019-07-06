@@ -1,7 +1,8 @@
-axios({
+$.ajax({
     url: "https://api-v3.igdb.com/search",
     method: 'POST',
     headers: {
+        'Access-Control-Allow-Origin': '*',
         'Accept': 'application/json',
         'user-key': "0739afcb5e23f6e503ddabfc22c2827f"
     },

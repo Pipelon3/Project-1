@@ -11,38 +11,36 @@
   <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Anton|Chakra+Petch&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Chakra+Petch&display=swap" rel="stylesheet">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <title>Movies</title>
+  <title>Home</title>
 </head>
 
 <body>
   <header id="body">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Movies</h1>
+        <h1 class="display-4">Home</h1>
         <p class="lead"></p>
       </div>
     </div>
-    <a href="index.html" id="logo"></a>
-    <a href="index.html" id="logo"></a>
+
     <nav class="navbar-expand-lg navbar-dark" style="background-color: rgb(77, 61, 61)">
       <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="home.html">Home</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="movies.html">Movies<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="movies.html">Movies</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="shows.html">TV Shows</a>
@@ -51,36 +49,46 @@
             <a class="nav-link" href="games.html">Games</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="about.html">About Us</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class= "container" ></div>
-    <div class="col-md-12"></div>
-    <form id="form">
-      <label for="user-input">Type a Movie to search</label><br>
-      <input type="text" id="user-input">
-      <input id="submitPress" type="submit" value="Submit" class="btn btn-default">
-    </form>
     </div>
     </div>
-  </header>
-  </div>
-  </nav>
-  </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-10" id="about">
 
-  <div class="container">
-      <div class="col-md-6"></div>
-      <div id="movie-view">
-      <div id="buttons-view"></div>
+        <h2>Our goal</h2>
+        <hr>
+    
+     
+        <p>
+            Our goal is to create a universal entertainment database that will search multiple APIs to find the perfect result!
+        </p>      
+            
+        <h2>How to use</h2>
+        <hr>
+
+ 
+        <p>
+            Just simply think of your favorite Movie, Show, or Game and click on its tab and type the name in the search bar. After hitting submit we will browse the web for your search and pull up useful information about the query!
+        </p>
+
+        <h2>How it works</h2>
+        <hr>
+
+ 
+        <p>
+        Our advance search uses a variety of different APIs to search multiple databases to find the exact information and display it in a convenient way that is easy to read. 
+       </p>
       </div>
-        <div id="info-appear-here">
-        </div>
+
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </div>
     <script type="text/javascript" src="assets/JS/app.js"></script>
-    <script type="text/javascript" src="assets/JS/movies.js"></script>
 </body>
 
 </html>

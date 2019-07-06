@@ -16,10 +16,10 @@ $(document).on("click", ".show-btn", showshowInfo)
 
 //Stuff to make the buttons show up
 
-var shows = [];
+let shows = [];
 
 function showshowInfo() {
-    var show = $(this).attr("data-name");
+    let show = $(this).attr("data-name");
     displayshowInfo(show);           
 }
 
